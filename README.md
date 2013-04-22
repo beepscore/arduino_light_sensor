@@ -25,3 +25,18 @@ Put in Arduino/libraries/Adafruit_TSL2561
 Copied file Adafruit_TSL2561/examples/sensorapi.pde  
 Opened in Arduino then closed, Arduino changed file extension from .pde to .ino  
 Renamed to arduino_light_sensor.ino  
+
+## Hardware Connect
+The luminosity sensor TSL2561 runs at 3.3 V.
+### CONNECTING A SECOND DEVICE TO THE I2C BUS RUNNING AT 5V COULD DAMAGE THE 3V DEVICE.
+
+"As long as all the sensors/device on the i2c bus are running on 3.3V power, we're fine.
+However, don't use a 5.0v powered i2c device (like the DS1307) with pullups at the same time as a 3.3V device like the TSL2561"
+http://learn.adafruit.com/tsl2561/wiring
+
+| Sensor | Arduino Duemilanove Pin |
+| ------ | ----------------------- |
+| VCC    | 3.3V                    |
+| GND    | GND                     |
+| SCL    | 5                       |
+| SDA    | 4                       |
