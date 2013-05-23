@@ -7,7 +7,7 @@ http://learn.adafruit.com/tsl2561/overview
 
 # Equipment
 ## Hardware
-Arduino Duemilanove "2009"  
+Arduino Duemilanove w/ ATmega328 (Duemilanove="2009")
 
 TSL2561 digital luminosity / lux / light sensor
 Adafruit ID: 439
